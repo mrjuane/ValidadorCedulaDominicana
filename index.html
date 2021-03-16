@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="utf-8">
+    <header>
+        <script src="DocumentIDValidation.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            function sendData()
+            {
+                var dato = document.getElementById('TextToValidate');
+                ValidateDocumentID(dato.value);
+            }    
+        </script>
+        
+        <head>
+            <h1>
+                Test validador de cedula para RD
+            </h1>
+        </head>
+        
+    </header>
+    <body>
+       
+        <input type="number" id="TextToValidate" placeholder="Insert RD Document">
+        <input type="button" id="ok" value="Ok" onclick="sendData()" />
+
+        
+    </body>
+</html>
+
